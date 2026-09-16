@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita ITERA - Penerapan HTML Semantik Dalam Pemweb</title>
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header>
+        <img src="logo.png" alt="Logo Institut Teknologi Sumatera" width="140">
+        <h1>Portal Berita dan Kegiatan ITERA</h1>
+        <p>Kabarkan Seputar Pengajaran, Riset, dan Pengabdian Masyarakat</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda Utama</a></li>
+                <li><a href="berita.html">Portal Berita Kampus</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Konten Utama Berita -->
+    <main>
+        
+        <!-- Artikel Berita Utama -->
+        <article>
+            <header>
+                <h2>Mahasiswa Teknik Informatika ITERA Mendalami Konsep HTML Semantik dan Standar W3C</h2>
+                <p>Dipublikasikan oleh: <strong>Tim Redaksi ITERA News</strong> | Tanggal: <time datetime="2025-02-15">15 Februari 2025</time> | Kategori: <em>Akademik & Teknologi</em></p>
+            </header>
+
+            <figure>
+                <img src="kuliah-pemweb.jpg" alt="Suasana Perkuliahan Pemrograman Web di ITERA" width="450">
+                <figcaption>Gambar 1: Suasana mahasiswa Teknik Informatika ITERA saat menyimak pemaparan materi HTML5 pada Perkuliahan Minggu ke-2[cite: 1].</figcaption>
+            </figure>
+
+            <!-- Bagian Paragraf Pembuka -->
+            <section>
+                <h3>Pentingnya Pondasi Dasar Struktur Web</h3>
+                <p><strong>LAMPUNG SELATAN</strong> — Program Studi Teknik Informatika Institut Teknologi Sumatera (ITERA) menyelenggarakan perkuliahan tatap muka untuk mata kuliah <em>Pengembangan Aplikasi Web</em> pertemauan ke-2[cite: 1]. Pada sesi ini, fokus materi diarahkan pada pemahaman sintaks dasar HTML, struktur dokumen, hingga implementasi elemen semantik secara menyeluruh[cite: 1].</p>
+                <p>Dosen pengampu menekankan bahwa sebelum memasuki ranah desain dengan CSS maupun logika interaktif menggunakan JavaScript, mahasiswa harus menguasai "kerangka dasar" (HTML as the skeleton) dari sebuah aplikasi web terlebih dahulu[cite: 1].</p>
+            </section>
+
+            <!-- Bagian Penerapan HTML Semantik -->
+            <section>
+                <h3>Mengapa Menggunakan HTML Semantik?</h3>
+                <p>Dalam perkuliahan dijelaskan bahwa penggunaan tag semantik seperti <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, dan <code>&lt;footer&gt;</code> memberikan makna logis terhadap dokumen HTML[cite: 1]. Berbeda dengan tag generik seperti <code>&lt;div&gt;</code> yang tidak memiliki arti struktural khusus[cite: 1].</p>
+                
+                <p>Beberapa keunggulan utama dari HTML Semantik antara lain:</p>
+                <ul>
+                    <li><strong>Meningkatkan Aksesibilitas (WCAG):</strong> Memudahkan perangkat bantu (*screen reader*) yang digunakan oleh penyandang disabilitas untuk membaca urutan konten dengan benar[cite: 1].</li>
+                    <li><strong>Optimasi Mesin Pencari (SEO):</strong> Mesin pencari seperti Google dapat memahami hierarki informasi pada halaman web secara lebih presisi[cite: 1].</li>
+                    <li><strong>Kemudahan Maintenance:</strong> Struktur kode menjadi jauh lebih rapi, mudah dibaca, dan mudah dirawat oleh tim pengembang aplikasi di kemudian hari[cite: 1].</li>
+                </ul>
+            </section>
+
+            <!-- Bagian Pengujian W3C & GitHub Pages -->
+            <section>
+                <h3>Validasi Standar dan Publikasi Aplikasi Web</h3>
+                <p>Selain penulisan kode, mahasiswa juga diwajibkan melakukan validasi menggunakan <strong>W3C Validator</strong> untuk memastikan tidak ada kesalahan pembukaan/penutupan tag maupun kesalahan sintaksis lainnya[cite: 1]. Sebagai penutup praktikum, setiap mahasiswa diminta mempublikasikan hasil karyanya secara langsung melalui layanan <em>GitHub Pages</em>[cite: 1].</p>
+                <p>Diharapkan melalui tugas praktikum ini, mahasiswa Teknik Informatika ITERA mampu menghasilkan produk web yang tidak hanya menarik secara visual kelak, tetapi juga patuh pada standar teknologi web internasional[cite: 1].</p>
+            </section>
+        </article>
+
+        <!-- Sidebar Berita Terkait -->
+        <aside>
+            <h3>Berita Terkait Lainnya</h3>
+            <ul>
+                <li><a href="#">ITERA Sediakan Fasilitas Laboratorium Terpadu untuk Riset AI</a></li>
+                <li><a href="#">Workshop Pemrograman Python dan React JS Bersama Alumni</a></li>
+                <li><a href="#">Persiapan Lomba Gemastik Bidang Pengembangan Perangkat Lunak</a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>Institut Teknologi Sumatera</strong> &copy; 2025 - Jurusan Teknologi Produksi dan Industri.</p>
+        <p>Pertanyaan dan saran mengenai berita dapat dikirimkan melalui email redaksi di <em>humas@itera.ac.id</em>.</p>
+    </footer>
+
+</body>
+</html>
