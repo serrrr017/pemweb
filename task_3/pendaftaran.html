@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="judul-halaman">Form Pendaftaran</h1>
+    <p>Pemrograman Web - Tugas Individu 3</p>
+  </header>
+
+  <div class="container">
+    <div class="box">
+      <h2>Isi Data Pendaftar</h2>
+
+      <!--
+        Desain Query String:
+        Form menggunakan method GET sehingga data dikirim lewat URL, contoh:
+        detail.html?nama=Sere+Sri+Rezeki+Sinaga&nim=124140150
+          &email=sere.124140150%40student.itera.ac.id
+          &telepon=081262465517&jurusan=Teknik+Informatika&gender=Perempuan
+        Pada tugas ini hanya didesain query string-nya, data tidak ditangkap/diproses.
+      -->
+      <form action="detail.html" method="GET">
+        <div class="form-group">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap">
+        </div>
+
+        <div class="form-group">
+          <label for="nim">NIM</label>
+          <input type="text" id="nim" name="nim" placeholder="Masukkan NIM">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="nama@email.com">
+        </div>
+
+        <div class="form-group">
+          <label for="telepon">No. Telepon</label>
+          <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx">
+        </div>
+
+        <div class="form-group">
+          <label for="jurusan">Program Studi</label>
+          <select id="jurusan" name="jurusan">
+            <option value="Teknik Informatika">Teknik Informatika</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Teknik Elektro">Teknik Elektro</option>
+            <option value="Teknik Sipil">Teknik Sipil</option>
+          </select>
+        </div>
+
+        <div class="form-group radio-group">
+          <label>Jenis Kelamin</label>
+          <label><input type="radio" name="gender" value="Laki-laki"> Laki-laki</label>
+          <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+        </div>
+
+        <button type="submit" class="btn">Daftar</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>Informatika ITERA &copy; 2025</footer>
+</body>
+</html>
